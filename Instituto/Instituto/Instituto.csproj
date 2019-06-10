@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dia1.cs" />
+    <Compile Include="Dia2CalculadoraMat.cs" />
     <Compile Include="Dia3calculadoraDeEdad.cs" />
+    <Compile Include="Dia4TablaMat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

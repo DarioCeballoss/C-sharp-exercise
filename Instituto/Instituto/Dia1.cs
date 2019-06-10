@@ -11,8 +11,15 @@ namespace Instituto
     {
         static void Main(string[] args)
         {
-            Dia3calculadoraDeEdad dia3 = new Dia3calculadoraDeEdad();
-            dia3.edad();
+            //Dia3calculadoraDeEdad dia3 = new Dia3calculadoraDeEdad();
+            //dia3.edad();
+
+            //Dia2CalculadoraMat dia2 = new Dia2CalculadoraMat();
+            //dia2.cuenta();
+
+            Dia4TablaMat dia4 = new Dia4TablaMat();
+            dia4.tablass();
+
             Console.ReadKey();
         }
     }
