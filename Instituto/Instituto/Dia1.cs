@@ -11,10 +11,13 @@ namespace Instituto
     {
         static void Main(string[] args)
         {
-          
+
+
+
+
             int dia;
-            Inicio:
-            Console.WriteLine("Seleccione un dia tecleando un numero del 2 al 4 \n \n mas adelante se agregara un menu");
+        Inicio:
+            Console.WriteLine("Seleccione un dia tecleando un numero del 2 al 5 \n \n mas adelante se agregara un menu");
             dia = Convert.ToInt32(Console.ReadLine());
 
             switch (dia)
@@ -31,14 +34,18 @@ namespace Instituto
                     Dia4TablaMat dia4 = new Dia4TablaMat();
                     dia4.tablass();
                     break;
+                case 5:
+                    Dia5Array dia5 = new Dia5Array();
+                    dia5.Array();
+                    break;
                 default:
                     Console.WriteLine("ERROR ERROR ERROR ERROR ERROR ERROR \n  SELECCIONE UNA DE LAS OPCIONES \n\n\n");
-                    
+
                     break;
 
             }
             goto Inicio;
-                    Console.ReadKey();
+            
         }
     }
 }
