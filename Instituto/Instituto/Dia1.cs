@@ -17,6 +17,7 @@ namespace Instituto
 
             int dia;
         Inicio:
+            Console.Clear();
             Console.WriteLine("Seleccione un dia tecleando un numero del 2 al 5 \n \n mas adelante se agregara un menu");
             dia = Convert.ToInt32(Console.ReadLine());
 
