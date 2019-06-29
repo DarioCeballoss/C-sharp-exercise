@@ -36,7 +36,7 @@ namespace Instituto
             {
                 Console.Write(array[i]);
             }
-
+             
 
             Console.ReadKey();
 
