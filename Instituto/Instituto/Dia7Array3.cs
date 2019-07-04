@@ -31,12 +31,15 @@ namespace Instituto
                 array[(longitud / 2) - 1] = 1;
             }
 
-                       
+            array[0] = 2;
+            array[longitud-1] = 2;
+
             for (int i = 0; i < longitud; i++)
             {
                 Console.Write(array[i]);
             }
-             
+
+            
 
             Console.ReadKey();
 

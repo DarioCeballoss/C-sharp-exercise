@@ -14,11 +14,10 @@ namespace Instituto
             double valor1, valor2;
 
             seguir = 3;
-
-
+            Inicio:
+            try { 
             while (seguir > 2)
             {
-
                 Console.WriteLine("		----------------------------");
                 Console.WriteLine("		-Calcualadora de dos cifras-");
                 Console.WriteLine("		----------------------------");
@@ -87,7 +86,14 @@ namespace Instituto
 
 
 
-
+            }
+            catch (Exception error)
+            {
+                Console.Clear();
+                Console.WriteLine(error.Message + "\n Inicie debuelta y asegurece de insertar bien el numero \n\n\n");
+                
+                goto Inicio;
+            }
 
         }
     }
