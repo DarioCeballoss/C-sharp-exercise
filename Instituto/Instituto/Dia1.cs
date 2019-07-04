@@ -20,10 +20,29 @@ namespace Instituto
 
             try
             {
-                Console.WriteLine("Seleccione un dia tecleando un numero del 2 al 7 \n \n mas adelante se agregara un menu");
+                Console.WriteLine("[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]");
+                Console.WriteLine("[][]  I.F.S. nº 93                           Dario Ceballos [][]");
+                Console.WriteLine("[][]                                                        [][]");
+                Console.WriteLine("[][]                    *** MENU ***                        [][]");
+                Console.WriteLine("[][]                                                        [][]");
+                Console.WriteLine("[][]	     Calculadora                       2            [][]");
+                Console.WriteLine("[][]	     Calculadora de edad               3            [][]");
+                Console.WriteLine("[][]	     Tablas de MULTIPLICAR             4            [][]");
+                Console.WriteLine("[][]	     Array 1                           5            [][]");
+                Console.WriteLine("[][]	     Array 2                           6            [][]");
+                Console.WriteLine("[][]	     Array 3                           7            [][]");
+                Console.WriteLine("[][]	     Dia2 Calculadora                  8            [][]");
+                Console.WriteLine("[][]                                                        [][]");
+                Console.WriteLine("[][]	     Salir                             1            [][]");
+                Console.WriteLine("[][]                                                        [][]");
+                Console.WriteLine("[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]");
+
+                //Console.WriteLine("Seleccione un dia tecleando un numero del 2 al 7 \n \n mas adelante se agregara un menu");
                 dia = Convert.ToInt32(Console.ReadLine());
                 switch (dia)
                 {
+                    
+
                     case 2:
                         Dia2CalculadoraMat dia2 = new Dia2CalculadoraMat();
                         dia2.cuenta();
@@ -55,11 +74,12 @@ namespace Instituto
                 }
             }catch (Exception error){
                 Console.WriteLine(error.Message + "\n Por favor inserta un numero");
-                dia = Convert.ToInt32(Console.ReadLine());
+                Console.ReadKey();
+
             }
 
             goto Inicio;
-
+            
         }
     }
 }
