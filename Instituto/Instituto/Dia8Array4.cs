@@ -10,37 +10,43 @@ namespace Instituto
     {
         public void array3()
         {
-
-            Console.WriteLine("inserte la longitud del Array");
-            int longitud = Convert.ToInt32(Console.ReadLine());
-
-            int[] array = new int[longitud];
-
-            Console.Write("Caso1:\n \t");
-            for (int i = 0; i < longitud; i++)
+            try
             {
+                Console.WriteLine("inserte la longitud del Array");
+                int longitud = Convert.ToInt32(Console.ReadLine());
 
-                if (i == 0)
-                    array[i] = 0;
-                else
-                    array[i] = (i - 1) + i;
-                Console.Write("  " + array[i]);
-            }
+                int[] array = new int[longitud];
 
-            Console.Write("\n Caso2:\n \t");
-            for (int i = 0; i < longitud; i++)
+                Console.Write("Caso1:\n \t");
+                for (int i = 0; i < longitud; i++)
+                {
+
+                    if (i == 0)
+                        array[i] = 0;
+                    else
+                        array[i] = (i - 1) + i;
+                    Console.Write("  " + array[i]);
+                }
+
+                Console.Write("\n Caso2:\n \t");
+                for (int i = 0; i < longitud; i++)
+                {
+                    array[i] = (i - longitud + 1);
+                    Console.Write("  " + array[i]);
+                }
+
+                Console.Write("\n Caso3:\n \t");
+                for (int i = 0; i < longitud; i++)
+                {
+                    array[i] = (i - 2);
+                    Console.Write("  " + array[i]);
+                }
+                Console.ReadKey();
+            }catch (Exception error)
             {
-                array[i] = (i - longitud + 1);
-                Console.Write("  " + array[i]);
-            }
-
-            Console.Write("\n Caso3:\n \t");
-            for (int i = 0; i < longitud; i++)
-            {
-                array[i] = (i - 2);
-                Console.Write("  " + array[i]);
-            }
-
+                Console.WriteLine(error.Message + "\n Por favor inserta un numero");
+                Console.ReadKey();
+                 }
 
             Console.ReadKey();
         }
