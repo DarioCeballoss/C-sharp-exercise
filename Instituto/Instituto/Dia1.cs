@@ -31,7 +31,7 @@ namespace Instituto
                 Console.WriteLine("[][]	     Array 1                           5            [][]");
                 Console.WriteLine("[][]	     Array 2                           6            [][]");
                 Console.WriteLine("[][]	     Array 3                           7            [][]");
-                Console.WriteLine("[][]	     Dia2 Calculadora                  8            [][]");
+                Console.WriteLine("[][]	     Array 4                           8            [][]");
                 Console.WriteLine("[][]                                                        [][]");
                 Console.WriteLine("[][]	     Salir                             1            [][]");
                 Console.WriteLine("[][]                                                        [][]");
@@ -66,6 +66,10 @@ namespace Instituto
                     case 7:
                         Dia7Array3 dia7 = new Dia7Array3();
                         dia7.array3();
+                        break;
+                    case 8:
+                        Dia8Array4 dia8 = new Dia8Array4();
+                        dia8.array3();
                         break;
                     default:
                         Console.WriteLine("ERROR ERROR ERROR ERROR ERROR ERROR \n  SELECCIONE UNA DE LAS OPCIONES \n\n\n");

@@ -19,7 +19,7 @@ namespace Instituto
             while (seguir > 2)
             {
                 Console.WriteLine("		----------------------------");
-                Console.WriteLine("		-Calcualadora de----------------------------------------- dos cifras-");
+                Console.WriteLine("		-Calcualadora de dos cifras-");
                 Console.WriteLine("		----------------------------");
 
 

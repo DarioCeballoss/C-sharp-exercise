@@ -50,6 +50,7 @@
     <Compile Include="Dia5Array.cs" />
     <Compile Include="Dia6Array2.cs" />
     <Compile Include="Dia7Array3.cs" />
+    <Compile Include="Dia8Array4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
